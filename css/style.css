@@ -32,7 +32,7 @@ img{
 }
 
 .container{
-    padding: 30px 40px;
+    padding: 30px 50px;
     width: 100%;
 }
 
@@ -75,20 +75,40 @@ img{
 }
 
 .card{
-    border-radius: 30px;
+    border-radius: 40px;
     padding-top: 50px;
     padding-left: 50px;
     padding-right: 50px;
-    height: 100%;
 }
 
 .bg1{
     background-color: #b5ddff;
 }
 
+.bg2{
+    background-color: #9792e4;
+    margin-top: 100px;
+    padding: 100px 0;
+}
+
+.bg3{
+    background-color: #ffff;
+}
+
 .title{
     font-size: 40px;
     color: #0084fd;
+}
+
+.title.var{
+    color: black;
+}
+
+.title.var-1{
+    font-size: 60px;
+    color: white;
+    padding-top: 100px;
+    padding-bottom: 50px;
 }
 
 .caption{
@@ -97,6 +117,17 @@ img{
     line-height: 50px;
     padding: 50px 0;
     color: #5a6e7f;
+}
+
+.caption.var{
+    color: black;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.caption.var-1{
+    color: white;
+    font-weight: 400;
 }
 
 .phone{
@@ -114,6 +145,16 @@ img{
     padding: 20px 80px;
 }
 
+.btn-arrow{
+    font-size: 25px;
+    background-color: #9792e4;
+    padding: 25px 32px;
+    border: none;
+    border-radius: 100%;
+    margin-bottom: 50px;
+
+}
+
 .align-c{
     text-align: center;
 }
@@ -128,10 +169,24 @@ img{
     margin-top: 50px;
 }
 
+.b-radius{
+    border-radius: 80px;
+}
+
 /***** Responsive *****/
 /* Tablet */
 @media all and (min-width: 768px){
+    .site-header .site-main .container{
+        max-width: 700px;
+        margin: 0 auto;
+    }
 
+    .flex-wrap{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: calc(100% / 3 -20px);
+    }
 }
 
 /* Desktop */
@@ -150,6 +205,3 @@ img{
     }
     
 }
-
-
-body > main > div > div.card.bg1.align-c
