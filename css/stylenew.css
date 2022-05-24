@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General */
+:root{
+    /* Palette */
+    --primary-color: #0084fd;
+    --secondary-color: #9792e4;
+
+    /* Palette box */
+    --box-color: #b5ddff;
+    --box-color-text: #5a6e7f;
+
+    /* Palette footer */
+    --footer-color: #333333;
+
+    /* Palette big title */
+    --big-title-color: #fdc15f;
+}
+
+body{
+    font-family: 'PT Sans', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    width: 100%;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.d-flex-col{
+    flex-direction: column;
+}
+
+.j-cnt{
+    justify-content: space-between;
+}
+
+.align-i{
+    align-items: center;
+}
+
+.align-t{
+    text-align: center;
+}
+
+/***** Mobile *****/
+/* Header */
+.site-header{
+    background-color: var(--primary-color);
+    width: 100%;
+}
+
+.container{
+    padding: 30px 50px;
+    width: 100%;
+}
+
+.fix{
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.menu{
+    display: none;
+}
+
+.hamburger a{
+    color: #ffff;
+    font-size: 30px;
+}
+
+.btn li{
+    background-color: #ffff;
+    color: black;
+    border-radius: 20px;
+    padding: 8px 15px;
+}
+
+ul li{
+    display: inline-block;
+    color: #ffff;
+    padding: 0 10px;
+}
+
+/* Main */
+.site-main{
+    background-color: #ffff;
+    margin-top: 150px;
+}
+
+.box{
+    background-color: var(--box-color);
+    border-radius: 30px;
+    padding: 50px;
+}
+
+.size-2x{
+    padding-bottom: 0;
+}
+
+.box-title{
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+.box-text{
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 3rem;
+    color: var(--box-color-text);
+    padding-top: 30px;
+}
+
+.box-icon{
+    font-size: 8rem;
+    color: var(--primary-color);
+}
+
+.btn{
+    border: none;
+    border-radius: 50px;
+    padding: 15px 60px;
+    margin: 30px 0;
+}
+
+.btn-apple{
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: #ffff;
+    background-color: var(--primary-color);
+}
+
+/***** Responsive *****/
+/* Tablet */
+@media all and (min-width: 768px){
+    .site-main .container{
+        margin: 0 auto;
+    }
+
+    .f-wrap{
+        flex-wrap: wrap;
+    }
+
+    .d-flex-row{
+        flex-direction: row;
+    }  
+
+    .box{
+        
+    }
+}
+
+/* Desktop */
+@media all and (min-width: 992px){
+    .site-header .container{
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .hamburger{
+        display: none;
+    }
+
+    .menu{
+        display: inline-block;
+    }
+    
+}
