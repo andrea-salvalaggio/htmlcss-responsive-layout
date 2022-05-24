@@ -103,6 +103,7 @@ ul li{
     background-color: var(--box-color);
     border-radius: 30px;
     padding: 50px;
+    margin: 20px;
 }
 
 .size-2x{
@@ -153,13 +154,17 @@ ul li{
         flex-wrap: wrap;
     }
 
-    .d-flex-row{
-        flex-direction: row;
-    }  
-
     .box{
-        
+        width: calc(100% / 3 - 20px);
     }
+
+    .size-2x{
+        width: calc((100% / 3) * 2);
+    }
+    
+    /* .d-flex-row{
+        flex-direction: row;
+    } */
 }
 
 /* Desktop */
